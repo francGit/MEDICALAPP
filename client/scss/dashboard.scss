@@ -1,0 +1,52 @@
+
+.bodyBox{
+    height: calc(100vh - 130px); 
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $bgbody;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $cl1;
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $cl6;
+    }
+
+    & .boxxx{
+        width: 60px;
+        height: 1200px;
+        background-color: $gris;
+    }
+
+    .cardResult{
+        & .card-body{
+            & .titleCard{
+                color: $cl4;
+                font-weight: 200;
+            }
+            & .data{
+                & .noUp{
+                    color: $cl7;
+                }
+                & .okUp{
+                    color: $cl8;
+                }
+                & h2{
+                    color: $cl1;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+  
+}

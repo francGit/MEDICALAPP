@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .login {
+        & .left{
+            min-height: 20vh;
+        }
+        & .boxImg{
+            background-position: 50%;
+        }
+        & .boxContent{
+            width: 90% !important;
+        }
+    }
+  }

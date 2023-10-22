@@ -8,6 +8,15 @@
 body, html{
     background: $bgbody;
     font-family: 'Ubuntu', sans-serif;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+      
+    &::-webkit-scrollbar-button {
+        display: none;
+      }
+       -ms-overflow-style:none;
+      
 }
 a{
     text-decoration: none;
@@ -20,7 +29,12 @@ a{
     border: 1px solid;
     background: $gris;
     color: $color-blanco;
+    transition: all 0.3s;
 
+    &:hover{
+        color: $color-blanco;
+    }
+    
     &.btn-line-wt{
         background: $color-blanco;
         border: 1px solid $gris;
@@ -35,4 +49,8 @@ input[type=text],input[type=password],input[type=email]{
     font-size: 1.2rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 100;
+}
+
+.bgLight{
+    background: $color-blanco;
 }

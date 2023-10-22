@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- stilos globales -->
+    <link rel="stylesheet" href="../../css/globalmedicalapp.css">
+    <title>Medical App | Dasboard</title>
+</head>
+<body>
+ 
+    <section class="main dasboard">
+        <div class="container-fluid ">
+          <div class="row">
+            <div class="col-md-2 left p-0">
+                 <div class="boxMenubar">
+                    <div id="menu"></div>
+                 </div>
+            </div>
+            <div class="col-md-10 right scrollBody p-0">
+                <div class="subHeader" id="subheader">
+
+                </div>
+                <div class="bodyBox"> 
+                    <section class="p-5">
+                        <h2>Overview</h2>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <div class="card cardResult" >
+                                    <div class="card-body">
+                                      <span class="titleCard">Total de citas</span>  
+                                      <div class="row">
+                                        <div class="col-md-6 d-flex align-items-end">
+                                            <div class="data">
+                                                <h2>246K</h2>
+                                                <span class="noUp"> <i class="fa-solid fa-arrow-down"></i> 13.8%</span>
+                                            </div>
+                                             
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="boxChart">
+                                                <canvas id="myChart"></canvas>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                           
+                            <div class="col-md-4">
+                                <div class="card cardResult" >
+                                    <div class="card-body">
+                                      <span class="titleCard">Medicamentos entregados</span> 
+                                     
+                                      <div class="row">
+                                        <div class="col-md-6 d-flex align-items-end">
+                                            <div class="data">
+                                                <h2>246K</h2>
+                                                <span class="okUp"> <i class="fa-solid fa-arrow-up"></i> 43.8%</span>
+                                            </div>
+                                             
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="boxChart">
+                                                <canvas id="myChart2"></canvas>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card cardResult" >
+                                    <div class="card-body">
+                                      <span class="titleCard">Total Pacientes</span> 
+                                     
+                                      <div class="row">
+                                        <div class="col-md-6 d-flex align-items-end">
+                                            <div class="data">
+                                                <h2>246K</h2>
+                                                <span class="noUp"> <i class="fa-solid fa-arrow-down"></i> 13.8%</span>
+                                            </div>
+                                             
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="boxChart">
+                                                <canvas id="myChart3"></canvas>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-12 bgLight p-3">
+                                <p>Pacientes</p>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <td>UBICACIÓN</td>
+                                                <td>ID</td>
+                                                <td>DNI</td>
+                                                <td>ESTADO</td>
+                                                <td>COOPAGO</td>
+                                                <td>USUARIO</td>
+                                                <td>TRATAMIENTO</td>
+                                            </tr>
+                                          </thead>
+                                          <tbody> 
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bogota</td>
+                                                <td>3746</td>
+                                                <td>1287755254537</td>
+                                                <td>ACTIVO</td>
+                                                <td>$19,291</td>
+                                                <td>JOSE ARMANDO PEREZ</td>
+                                                <td>NO</td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                  </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+                <div id="footer"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+<!-- load bootstrap js  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../js/menu.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- script generals -->
+<!-- inner scripts -->
+<script>
+    const ctx = document.getElementById('myChart');
+    const ctx2 = document.getElementById('myChart2');
+    const ctx3 = document.getElementById('myChart3');
+    
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    new Chart(ctx3, {
+      type: 'bar',
+      data: {
+        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
