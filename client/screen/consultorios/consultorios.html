@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- stilos globales -->
     <link rel="stylesheet" href="../../css/globalmedicalapp.css">
-    <title>Medical App | Dasboard</title>
+    <title>Medical App | Consultorios</title>
 </head>
 <body>
     <div class="preloader" id="load"> </div>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="bodyBox"> 
                     <section class="p-5">
-                        <h2>Overview</h2>
+                        <h2>Consultorios</h2>
                         <div class="row mb-3">
                             <div class="col-md-4">
                                 <div class="card cardResult" >
@@ -41,9 +41,7 @@
                                              
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="boxChart">
-                                                <canvas id="myChart"></canvas>
-                                              </div>
+                                           
                                         </div>
                                       </div>
                                     </div>
@@ -64,9 +62,7 @@
                                              
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="boxChart">
-                                                <canvas id="myChart2"></canvas>
-                                              </div>
+                                             
                                         </div>
                                       </div>
                                     </div>
@@ -87,9 +83,7 @@
                                              
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="boxChart">
-                                                <canvas id="myChart3"></canvas>
-                                              </div>
+                                          
                                         </div>
                                       </div>
                                     </div>
@@ -99,7 +93,7 @@
 
                         </div>
                         <div class="row p-2">
-                            <div class="col-md-12 bgLight p-3">
+                            <div class="col-md-9 bgLight p-3">
                                 <p>Pacientes</p>
                                 <div class="table-responsive">
                                     <table class="table">
@@ -254,6 +248,10 @@
                                     </table>
                                   </div>
                             </div>
+                            <div class="col-md-3 bgLight p-3">
+                                <p>Pacientes</p>
+                              
+                            </div>
                         </div>
 
                     </section>
@@ -268,70 +266,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="../../js/menu.js"></script>
-<script type="text/javascript" src="../../js/global.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript" src="../../js/global.js"></script>  
 <!-- script generals -->
 <!-- inner scripts -->
-<script>
-    const ctx = document.getElementById('myChart');
-    const ctx2 = document.getElementById('myChart2');
-    const ctx3 = document.getElementById('myChart3');
-    
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-    new Chart(ctx2, {
-      type: 'bar',
-      data: {
-        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-    new Chart(ctx3, {
-      type: 'bar',
-      data: {
-        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-  </script>
-
+ 
 </body>
 </html>

@@ -375,6 +375,35 @@ input[type=text], input[type=password], input[type=email] {
   background: #FFFFFF;
 }
 
+.preloader {
+  background-color: #F5F6FA;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.preloader .boxPreloader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.preloader .boxPreloader img {
+  mix-blend-mode: multiply;
+}
+
 .subHeader {
   background-color: #FFFFFF;
   min-height: 60px;
@@ -505,6 +534,10 @@ input[type=text], input[type=password], input[type=email] {
 .bodyBox .cardResult .card-body .data h2 {
   color: #3B3A53;
   font-weight: 600;
+}
+
+h1 {
+  color: red;
 }
 
 @media only screen and (max-width: 600px) {
