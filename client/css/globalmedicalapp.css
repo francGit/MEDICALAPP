@@ -343,14 +343,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
 .btn {
   width: 100%;
   max-width: 240px;
@@ -412,22 +404,6 @@ input[type=text], input[type=password], input[type=email] {
   mix-blend-mode: multiply;
 }
 
-.successtext {
-  color: #3CC480 !important;
-}
-
-.moratext {
-  color: #A3A0FB !important;
-}
-
-.magentatext {
-  color: #FFE3E7 !important;
-}
-
-.orangetext {
-  color: #FFEFD9 !important;
-}
-
 .subHeader {
   background-color: #FFFFFF;
   min-height: 60px;
@@ -435,47 +411,6 @@ input[type=text], input[type=password], input[type=email] {
 
 #footer {
   background: #F5F6FA;
-}
-
-.coverProd {
-  width: 60px;
-  height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 1px solid #A3A6B4;
-}
-
-.btnBase {
-  background-color: #3B86FF;
-  color: #FFFFFF;
-  padding: 0.4rem 0.9rem;
-  display: inline-block;
-  margin-bottom: 8px;
-  width: 100%;
-  max-width: 220px;
-  text-align: center;
-  border-radius: 20px;
-  font-weight: 500;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.btnBase:hover {
-  color: #3B3A53;
-}
-
-.listActions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-
-.bgmora {
-  background-color: #A5A4BF;
-}
-
-.bgdelete {
-  background-color: #FF6565;
 }
 
 .boxMenubar {

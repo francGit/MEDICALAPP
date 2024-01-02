@@ -22,12 +22,7 @@ a{
     text-decoration: none;
 }
 
-ul{
-    padding:0;
-}
-ul li{
-    list-style: none;
-}
+
 .btn{
     width: 100%;
     max-width: 240px;
@@ -77,17 +72,4 @@ input[type=text],input[type=password],input[type=email]{
             mix-blend-mode: multiply;
         }
     }
-}
-
-.successtext{
-    color: $cl8 !important;
-}
-.moratext{
-    color: $cl10 !important;
-}
-.magentatext{
-    color: $cl13 !important;
-}
-.orangetext{
-    color: $cl15 !important;
 }
