@@ -12,10 +12,10 @@ let menuPrincipal =`
    <div class="boxMenu">
     <ul>
         <li>
-            <a href="../../screen/dasboard/dashboard.html" class="active"><i class="fa-solid fa-chart-simple"></i> <span>Dasboard</span> </a>
+            <a href="../../screen/dasboard/dashboard.html"  ><i class="fa-solid fa-chart-simple"></i> <span>Dasboard</span> </a>
         </li> 
         <li>
-             <a href="../../screen/dasboard/dashboard.html"><i class="fa-solid fa-calendar-check"></i> <span>Agendar Citas</span> </a>
+             <a href="../../screen/citas/citas.html"><i class="fa-solid fa-calendar-check"></i> <span>Agendar Citas</span> </a>
         </li> 
         <li>
             <a href="../../screen/dasboard/dashboard.html"><i class="fa-solid fa-users"></i> <span>Pacientes</span> </a>
@@ -38,6 +38,8 @@ let menuPrincipal =`
     </ul>
    </div>    
 `;
+
+
  
 
 $(()=>{  
