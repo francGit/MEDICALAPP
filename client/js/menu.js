@@ -18,13 +18,13 @@ let menuPrincipal =`
              <a href="../../screen/citas/citas.html"><i class="fa-solid fa-calendar-check"></i> <span>Agendar Citas</span> </a>
         </li> 
         <li>
-            <a href="../../screen/dasboard/dashboard.html"><i class="fa-solid fa-users"></i> <span>Pacientes</span> </a>
+            <a href="../../screen/pacientes/pacientes.html"><i class="fa-solid fa-users"></i> <span>Pacientes</span> </a>
         </li>
         <li>
-            <a href="../../screen/dasboard/dashboard.html"><i class="fa-solid fa-user-doctor"></i> <span>Medicos</span> </a>
+            <a href="../../screen/medicos/medicos.html"><i class="fa-solid fa-user-doctor"></i> <span>Medicos</span> </a>
         </li>
         <li>
-            <a href="../../screen/dasboard/dashboard.html"><i class="fa-solid fa-person"></i> <span>Empleados</span> </a>
+            <a href="../../screen/empleados/empleados.html"><i class="fa-solid fa-person"></i> <span>Empleados</span> </a>
         </li>
         <li>
             <a href="../../screen/consultorios/consultorios.html"><i class="fa-solid fa-bed"></i> <span>Consultorios</span> </a>
