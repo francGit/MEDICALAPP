@@ -24,6 +24,14 @@
             //TODO
         }
 
+        public function actualizarPaciente(){
+            //TODO
+        }
+        
+        public function desactivarPaciente(){
+            //TODO
+        }
+
 
     }
 

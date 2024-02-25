@@ -719,6 +719,26 @@ h1 {
   color: red;
 }
 
+.boxDropDown{
+  position: relative; 
+  cursor: pointer;
+}
+
+.boxDropDown #desplegar{ 
+  position: absolute !important;
+  right: 0px !important;
+  top: 44px !important;
+  width: 190px;
+  z-index: 9;
+}
+.boxDropDown #desplegar li {
+  width: 100%;
+}
+.boxDropDown #desplegar ul{
+  padding-left: 0 !important;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 600px) {
   .login .left {
     min-height: 20vh;

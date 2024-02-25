@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-10 right scrollBody p-0">
                 <div class="subHeader" id="subheader">
-
+                  <?php include "../../inc/submenu.php" ?>
                 </div>
                 <div class="bodyBox"> 
                     <section class="p-5">
@@ -36,11 +36,7 @@
                                             </div>
                                              
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="boxChart">
-                                                <canvas id="myChart"></canvas>
-                                              </div>
-                                        </div>
+                                    
                                       </div>
                                     </div>
                                   </div>
@@ -59,11 +55,7 @@
                                             </div>
                                              
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="boxChart">
-                                                <canvas id="myChart2"></canvas>
-                                              </div>
-                                        </div>
+                                        
                                       </div>
                                     </div>
                                   </div>
@@ -82,11 +74,7 @@
                                             </div>
                                              
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="boxChart">
-                                                <canvas id="myChart3"></canvas>
-                                              </div>
-                                        </div>
+                                      
                                       </div>
                                     </div>
                                   </div>
@@ -262,69 +250,11 @@
 
 <!-- load bootstrap js  -->
 <?php include "../../inc/scrips.php" ?>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
 <!-- script generals -->
 <!-- inner scripts -->
-<script>
-    const ctx = document.getElementById('myChart');
-    const ctx2 = document.getElementById('myChart2');
-    const ctx3 = document.getElementById('myChart3');
-    
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-    new Chart(ctx2, {
-      type: 'bar',
-      data: {
-        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-    new Chart(ctx3, {
-      type: 'bar',
-      data: {
-        labels: ['EN', 'FEB', 'MAR', 'MAY', 'JUN', 'JUL'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-  </script>
+ 
+
 
 </body>
 </html>
