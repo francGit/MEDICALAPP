@@ -1,5 +1,4 @@
-<?php require "./Controller/session_start.php" ?>
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -84,7 +83,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="./view/client" class="appointment-btn scrollto"><span class="d-none d-md-inline">Ingresar</span> </a>
+      <a href="./views/" class="appointment-btn scrollto"><span class="d-none d-md-inline">Ingresar</span> </a>
 
     </div>
   </header><!-- End Header -->
